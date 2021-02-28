@@ -1,13 +1,17 @@
 package com.company;
 
+import javax.lang.model.type.ArrayType;
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
         System.out.println( "Hey hey people, Sseth here!" );
 
-        Human human1 = new Human( "Jan", "Malinski", "Java Dev", 6000);
-        Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500 );
+        Human human1 = new Human( "Jan", "Malinski", "Java Dev", 6000, 41);
+        Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500, 29 );
+        Human human3 = new Human( "Ania", "Wojtasik", "Actor", 4000, 33 );
 
         Animal animal1 = new Animal( "Gutek", 15, 3, "cat" );
         Animal animal2 = new Animal("Loui",  40, 8, "dog" );
@@ -25,9 +29,27 @@ public class Main {
         } else {
             System.out.println(animal2.name + " jest ciezszy od " + animal1.name + ".");
             System.out.println("Waga " + animal2.name + " to " + animal2.weight + "kg.");
-
         }
 
+//        String maxWeightAnimalName = animal1.weight ? animal2.weight :
+
+
+        StringBuilder animaldesc = new StringBuilder( animal1.name + " jest ciezszy od " ).
+                append( animal1.name + "." ).
+                append( "Waga " + animal2.name + " to " + animal2.weight + "kg." );
+
+        System.out.println(animaldesc);
+
+        ArrayList<Human> humanList = new ArrayList<>(  );
+        humanList.add( human1 );
+        humanList.add( human2 );
+        humanList.add( human3 );
+
+
+        for (Human human : humanList){
+            System.out.println(human.firstName + " jest w wieku " + human.age);
+//            System.out.println(human.age);
+        }
     }
 }
 

@@ -6,13 +6,14 @@ public class Human {
     String firstName, lastName;
     String position;
     int salary;
-    short age;
+    int age;
 
-    public Human(String firstName, String lastName, String position, int salary) {
+    public Human(String firstName, String lastName, String position, int salary, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
         this.salary = salary;
+        this.age = age;
     }
 
     public Human(String firstName, String lastName, short age) {
