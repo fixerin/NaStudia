@@ -13,8 +13,8 @@ public class Main {
         Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500, 29 );
         Human human3 = new Human( "Ania", "Wojtasik", "Actor", 4000, 33 );
 
-        Animal animal1 = new Animal( "Gutek", 2,  "cat" );
-        Animal animal2 = new Animal("Loui",  5,  "dog" );
+        Animal animal1 = new Animal( "Gutek", 2,  "kot" );
+        Animal animal2 = new Animal("Loui",  5,  "pies" );
 
         Phone phone1 = new Phone( "Motorola", 0.25, 1500.0 );
         Phone phone2 = new Phone( "Samsung", 0.3, 2214.23 );
@@ -51,6 +51,10 @@ public class Main {
             System.out.println(human.firstName + " jest w wieku " + human.age);
 //            System.out.println(human.age);
         }
+
+        human1.pet = animal1;
+
+        System.out.println(human1.firstName + " ma nowego " + human1.pet.species +". Wabi się " + human1.pet.name + ".");
 
         animal1.feed();
         animal1.feed();

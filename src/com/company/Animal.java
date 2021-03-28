@@ -13,11 +13,11 @@ public class Animal {
 
     public Animal(String name, int age, String species) {
         this.name = name;
-        if (species.equals( "cat" )){
+        if (species.equals( "kot" )){
             this.weight = DEFAULT_CAT_WEIGHT;
-        } else if (species.equals( "dog" )){
+        } else if (species.equals( "pies" )){
             this.weight = DEFAULT_DOG_WEIGHT;
-        } else if (species.equals( "bird" )){
+        } else if (species.equals( "ptak" )){
             this.weight = DEFAULT_BIRD_WEIGHT;
         } else {
             this.weight = DEFAULT_WEIGHT;
