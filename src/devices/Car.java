@@ -1,9 +1,9 @@
-package com.company;
+package devices;
 
 public class Car {
     final String model;
-    final String producer;
-    int yeabook;
+    public final String producer;
+    public int yeabook;
     String color;
     int carsMileage;
 
@@ -14,6 +14,8 @@ public class Car {
         this.color = color;
         this.carsMileage = carsMileage;
     }
+
+
 
 }
 

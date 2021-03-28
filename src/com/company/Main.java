@@ -1,6 +1,8 @@
 package com.company;
 
-import javax.lang.model.type.ArrayType;
+import devices.Car;
+import devices.Phone;
+
 import java.util.ArrayList;
 
 public class Main {
