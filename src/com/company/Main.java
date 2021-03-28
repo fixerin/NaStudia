@@ -11,9 +11,9 @@ public class Main {
 	// write your code here
         System.out.println( "Hey hey people, Sseth here!" );
 
-        Human human1 = new Human( "Jan", "Malinski", "Java Dev", 6000, 41);
-        Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500, 29 );
-        Human human3 = new Human( "Ania", "Wojtasik", "Actor", 4000, 33 );
+        Human human1 = new Human( "Jan", "Malinski", "Java Dev", 6000.0, 41);
+        Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500.0, 29 );
+        Human human3 = new Human( "Ania", "Wojtasik", "Actor", 4000.0, 33 );
 
         Animal animal1 = new Animal( "Gutek", 2,  "kot" );
         Animal animal2 = new Animal("Loui",  5,  "pies" );
@@ -74,6 +74,9 @@ public class Main {
         human2.car = car1;
         System.out.println(human2.firstName + " now have " + human2.car.producer + ". It's yearbook is " + human2.car.yeabook + ".");
 
+        human1.getSalary();
+        human1.setSalary( -1040.0 );
+        human1.setSalary( 6100.0 );
 
     }
 }

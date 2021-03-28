@@ -2,15 +2,19 @@ package com.company;
 
 import devices.Car;
 
+import java.util.Date;
+
 public class Human {
     String firstName, lastName;
     String position;
-    int salary;
+    Double salary;
     int age;
     Animal pet;
     Car car;
 
-    public Human(String firstName, String lastName, String position, int salary, int age) {
+
+
+    public Human(String firstName, String lastName, String position, Double salary, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
@@ -24,4 +28,20 @@ public class Human {
         this.age = age;
     }
 
+    public Double getSalary() {
+        System.out.println(new Date() + ": Salary data recived, salary is " + salary);
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        if (salary < 0 ) {
+            System.out.println( "Salary can't be negative value." );
+            return;
+        } else {
+            this.salary = salary;
+            System.out.println("New salary is " + salary);
+            System.out.println("You have to recive annex from ms. Hania from Kadr.");
+            System.out.println("Your salary is no secret for ZUS and US.");
+        }
+    }
 }
