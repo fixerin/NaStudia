@@ -7,6 +7,7 @@ public class Human {
     String position;
     int salary;
     int age;
+    Animal pet;
 
     public Human(String firstName, String lastName, String position, int salary, int age) {
         this.firstName = firstName;
