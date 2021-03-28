@@ -10,7 +10,7 @@ public class Human {
     Double salary;
     int age;
     Animal pet;
-    Car car;
+    private Car car;
 
 
 
@@ -36,12 +36,30 @@ public class Human {
     public void setSalary(Double salary) {
         if (salary < 0 ) {
             System.out.println( "Salary can't be negative value." );
-            return;
         } else {
             this.salary = salary;
             System.out.println("New salary is " + salary);
             System.out.println("You have to recive annex from ms. Hania from Kadr.");
             System.out.println("Your salary is no secret for ZUS and US.");
         }
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if (salary > car.value) {
+            System.out.println("You bought your new car with cash.");
+            this.car = car;
+        } else if (salary > car.value / 12) {
+            System.out.println("You bought your new car with credit loan.");
+            this.car = car;
+        } else {
+            System.out.println("Search for new job or ask for promotion. You can't afford it.");
+        }
+
+
+
     }
 }

@@ -69,14 +69,20 @@ public class Main {
         animal1.takeForAWalk();
         animal1.takeForAWalk();
 
-        Car car1 = new Car( "A4", "Audi", 2018, "black", 0 );
-
-        human2.car = car1;
-        System.out.println(human2.firstName + " now have " + human2.car.producer + ". It's yearbook is " + human2.car.yeabook + ".");
-
         human1.getSalary();
         human1.setSalary( -1040.0 );
         human1.setSalary( 6100.0 );
+
+
+        human2.setSalary( 60000.0 );
+        Car car1 = new Car( "A4", "Audi", 2018, "black", 0, 36000.0 );
+
+        human2.setCar( car1 );
+        //System.out.println(human2.firstName + " now have " + human2.getCar().producer + ". It's yearbook is " + human2.getCar().yeabook + ".");
+
+
+
+
 
     }
 }

@@ -6,13 +6,15 @@ public class Car {
     public int yeabook;
     String color;
     int carsMileage;
+    public Double value;
 
-    public Car (String model, String producer, int yeabook, String color, int carsMileage){
+    public Car (String model, String producer, int yeabook, String color, int carsMileage, Double value){
         this.model = model;
         this.producer = producer;
         this.yeabook = yeabook;
         this.color = color;
         this.carsMileage = carsMileage;
+        this.value = value;
     }
 
 
