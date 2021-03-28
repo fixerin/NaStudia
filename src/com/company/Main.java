@@ -31,12 +31,13 @@ public class Main {
             System.out.println("Waga " + animal2.name + " to " + animal2.weight + "kg.");
         }
 
-//        String maxWeightAnimalName = animal1.weight ? animal2.weight :
+
+        Animal animalMaxWeight = animal1.weight > animal2.weight ? animal1 : animal2;
 
 
         StringBuilder animaldesc = new StringBuilder( animal1.name + " jest ciezszy od " ).
                 append( animal1.name + "." ).
-                append( "Waga " + animal2.name + " to " + animal2.weight + "kg." );
+                append( " Waga " + animal2.name + " to " + animal2.weight + "kg." );
 
         System.out.println(animaldesc);
 
