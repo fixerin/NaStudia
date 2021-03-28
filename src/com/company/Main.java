@@ -67,6 +67,12 @@ public class Main {
         animal1.takeForAWalk();
         animal1.takeForAWalk();
 
+        Car car1 = new Car( "A4", "Audi", 2018, "black", 0 );
+
+        human2.car = car1;
+        System.out.println(human2.firstName + " now have " + human2.car.producer + ". It's yearbook is " + human2.car.yeabook + ".");
+
+
     }
 }
 
