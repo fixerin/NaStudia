@@ -18,8 +18,8 @@ public class Main {
         Animal animal1 = new Animal( "Gutek", 2,  "kot" );
         Animal animal2 = new Animal("Loui",  5,  "pies" );
 
-        Phone phone1 = new Phone( "Motorola", 0.25, 1500.0 );
-        Phone phone2 = new Phone( "Samsung", 0.3, 2214.23 );
+        Phone phone1 = new Phone( "Motorola", "A45", 2016, 0.25, 1500.0 );
+        Phone phone2 = new Phone( "Samsung", "G30", 2018, 0.3, 2214.23 );
 
         System.out.println(human1);
         System.out.println(phone2);
@@ -58,29 +58,33 @@ public class Main {
 
         System.out.println(human1.firstName + " ma nowego " + human1.pet.species +". Wabi się " + human1.pet.name + ".");
 
-        animal1.feed();
-        animal1.feed();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-        animal1.takeForAWalk();
-
-        human1.getSalary();
-        human1.setSalary( -1040.0 );
-        human1.setSalary( 6100.0 );
-
-
-        human2.setSalary( 60000.0 );
+//        animal1.feed();
+//        animal1.feed();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//        animal1.takeForAWalk();
+//
+//        human1.getSalary();
+//        human1.setSalary( -1040.0 );
+//        human1.setSalary( 6100.0 );
+//
+//
+//        human2.setSalary( 60000.0 );
         Car car1 = new Car( "A4", "Audi", 2018, "black", 0, 36000.0 );
 
         human2.setCar( car1 );
         //System.out.println(human2.firstName + " now have " + human2.getCar().producer + ". It's yearbook is " + human2.getCar().yeabook + ".");
 
-
+        Car carTest = new Car( "B2", "BMW", 2021, "grey", 0,203000.0 );
+        carTest.turnOn();
+        phone1.turnOn();
+        System.out.println( carTest );
+        System.out.println( phone1 );
 
 
 
