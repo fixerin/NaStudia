@@ -7,13 +7,13 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 	// write your code here
         System.out.println( "Hey hey people, Sseth here!" );
 
-        Human human1 = new Human( "Jan", "Malinski", "Java Dev", 6000.0, 41);
-        Human human2 = new Human( "Wojtek", "Krawczyk", "Front-End Dev", 5500.0, 29 );
-        Human human3 = new Human( "Ania", "Wojtasik", "Actor", 4000.0, 33 );
+        Human human1 = new Human( 60.0, "Jan", "Malinski", "Java Dev", 6000.0, 20000.0,41);
+        Human human2 = new Human( 75.0, "Wojtek", "Krawczyk", "Front-End Dev", 5500.0, 60000.0, 29 );
+        Human human3 = new Human( 58.7, "Ania", "Wojtasik", "Actor", 4000.0, 6000.2, 33 );
 
         Animal animal1 = new Animal( "Gutek", 2,  "kot" );
         Animal animal2 = new Animal("Loui",  5,  "pies" );
@@ -86,8 +86,18 @@ public class Main {
         System.out.println( carTest );
         System.out.println( phone1 );
 
+//        car1.sell( human1, human2, human1.cash );
+
+        human2.getCar().sell( human2, human1, 20000.0 );
+
+        System.out.println("------------------------------------------------------------");
+
+        human1.setPhone( phone1 );
+        human1.getPhone().sell( human1, human2, phone1.getPrice() );
 
 
+        System.out.println("------------------------------------------------------------");
+        human1.pet.sell( human1, human2, 323.3 );
     }
 }
 

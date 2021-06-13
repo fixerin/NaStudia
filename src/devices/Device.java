@@ -1,6 +1,8 @@
 package devices;
 
-public abstract class Device {
+import com.company.Saleable;
+
+public abstract class Device implements Saleable {
 
     final String producer;
     final String model;
